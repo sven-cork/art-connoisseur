@@ -3,8 +3,9 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/greek_statue_freepik_freepik.jpg') no-repeat right top fixed;
     background-size: cover;
+    background-position: right top
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -28,13 +29,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #e76536;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #e76536;
     color: white;
 }
 
@@ -49,15 +50,15 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #555 !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #e76536 !important;
 }
 
-.bg-black {
-    background: #000 !important;
+.bg-tangerine {
+    background: #e76536 !important;
 }
 
 /* -------------------------------- Media Queries */
@@ -81,5 +82,22 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* Push body content below header */
+@media (max-width: 1050px) {
+    .body-content {
+        margin-top: 200px;    
+    }
+
+    .smaller-font {
+        font-size: 2.00rem; /* Match the h4 font size */
+        font-weight: bold;  /* Match the h4 font weight */
+        color: #555;        /* Match the h4 text color */
+    }
+
+    .special-offer-bar {
+        font-size: small;
     }
 }
