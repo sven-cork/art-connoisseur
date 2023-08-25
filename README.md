@@ -209,9 +209,7 @@ Django Bakery was deployed to Heroku as per the below steps:
 
 ### Image Credits
 
-  <a href="https://www.freepik.com/free-vector/gods-hand-vector-sticker-creation-adam-famous-painting-remixed-from-artworks-by-michelangelo-buonarroti_17204109.htm#query=art&position=8&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
-
-  - Art cover image by [rawpixel](https://www.freepik.com/free-vector/gods-hand-vector-sticker-creation-adam-famous-painting-remixed-from-artworks-by-michelangelo-buonarroti_17204109.htm#query=art&position=8&from_view=search&track=sph) on freepik
+  - [Art cover](https://www.freepik.com/free-ai-image/aesthetic-background-with-greek-bust_59772797.htm#query=greek%20statue&position=30&from_view=search&track=ais) image by freepik on freepik
 
   - Strawberry Cake ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/victoria-sponge-cake-isolated-white-background-traditional-london-dessert-ai-generative_43227755.htm#query=strawberry%20cake&position=0&from_view=search&track=ais_ai_generated) on freepik
   - Cinnamon Bun ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/homemade-baked-dessert-sweet-indulgence-plate-generated-by-ai_41477028.htm#query=cinnamon%20bun&position=1&from_view=search&track=ais_ai_generated) on freepik
