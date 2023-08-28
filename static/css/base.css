@@ -100,25 +100,19 @@ hr {
     }
 }
 
-/* Push body content below header for small to large screens */
-@media (max-width: 1050px) {
-    .body-content {
-        margin-top: 200px;    
+/* pad the top a bit when navbar is collapsed on mobile display */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
     }
 
-    .smaller-font {
-        font-size: 2.00rem; /* Match the h4 font size */
-        font-weight: bold;  /* Match the h4 font weight */
-        color: #555;        /* Match the h4 text color */
-    }
-
-    .special-offer-bar {
-        font-size: small;
+    body {
+        height: calc(100vh - 116px);
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 850px) {
+/* pad the top a bit when navbar is collapsed on smallest sized mobile display */
+@media (max-width: 380px) {
     .header-container {
         padding-top: 170px;
     }
