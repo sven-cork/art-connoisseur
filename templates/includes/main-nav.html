@@ -17,12 +17,12 @@
                 Paints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Pigment Rich Oils</a>
-                <a href="" class="dropdown-item">Student Oils</a>
-                <a href="" class="dropdown-item">Acrylics</a>
-                <a href="" class="dropdown-item">Water Colour</a>
-                <a href="" class="dropdown-item">Inks</a>
-                <a href="" class="dropdown-item">All Paints</a>
+                <a href="{% url 'materials' %}?category=pigment_rich_oils" class="dropdown-item">Pigment Rich Oils</a>
+                <a href="{% url 'materials' %}?category=student_oils" class="dropdown-item">Student Oils</a>
+                <a href="{% url 'materials' %}?category=acrylics" class="dropdown-item">Acrylics</a>
+                <a href="{% url 'materials' %}?category=water_colour" class="dropdown-item">Water Colour</a>
+                <a href="{% url 'materials' %}?category=inks" class="dropdown-item">Inks</a>
+                <a href="{% url 'materials' %}?category=pigment_rich_oils,student_oils,acrylics,water_colour,inks" class="dropdown-item">All Paints</a>
             </div>
         </li>
 
@@ -31,10 +31,10 @@
                 Canvas
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Cotton Canvas</a>
-                <a href="" class="dropdown-item">Linen Canvas</a>
-                <a href="" class="dropdown-item">Standard Canvas</a>
-                <a href="" class="dropdown-item">All Canvas</a>
+                <a href="{% url 'materials' %}?category=cotton_canvas" class="dropdown-item">Cotton Canvas</a>
+                <a href="{% url 'materials' %}?category=linen_canvas" class="dropdown-item">Linen Canvas</a>
+                <a href="{% url 'materials' %}?category=standard_canvas" class="dropdown-item">Standard Canvas</a>
+                <a href="{% url 'materials' %}?category=cotton_canvas,linen_canvas,standard_canvas" class="dropdown-item">All Canvas</a>
             </div>
         </li>
 
@@ -43,10 +43,10 @@
                 Paper
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Acrylic & Oil Paper</a>
-                <a href="" class="dropdown-item">Drawing Paper</a>
-                <a href="" class="dropdown-item">Watercolour Paper</a>
-                <a href="" class="dropdown-item">All Paper</a>
+                <a href="{% url 'materials' %}?category=acrylic_oil_paper" class="dropdown-item">Acrylic & Oil Paper</a>
+                <a href="{% url 'materials' %}?category=drawing_paper" class="dropdown-item">Drawing Paper</a>
+                <a href="{% url 'materials' %}?category=watercolour_paper" class="dropdown-item">Watercolour Paper</a>
+                <a href="{% url 'materials' %}?category=acrylic_oil_paper,drawing_paper,watercolour_paper," class="dropdown-item">All Paper</a>
             </div>
         </li>
 
@@ -55,11 +55,11 @@
                 Draw
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Graphite Pencils</a>
-                <a href="" class="dropdown-item">Coloured Pencils</a>
-                <a href="" class="dropdown-item">Watercolour Pencils</a>
-                <a href="" class="dropdown-item">Coals</a>
-                <a href="" class="dropdown-item">All Drawing</a>
+                <a href="{% url 'materials' %}?category=graphite_pencils" class="dropdown-item">Graphite Pencils</a>
+                <a href="{% url 'materials' %}?category=coloured_pencils" class="dropdown-item">Coloured Pencils</a>
+                <a href="{% url 'materials' %}?category=watercolour_pencils" class="dropdown-item">Watercolour Pencils</a>
+                <a href="{% url 'materials' %}?category=coals" class="dropdown-item">Coals</a>
+                <a href="{% url 'materials' %}?category=graphite_pencils,coloured_pencils,watercolour_pencils,coals" class="dropdown-item">All Drawing</a>
             </div>
         </li>
 

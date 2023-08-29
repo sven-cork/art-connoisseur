@@ -71,6 +71,16 @@ body {
     z-index: -1;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #f8f9fa;
+	z-index: -1;
+}
+
 /* horizontal line styling */
 hr {
     border-top: 2px solid #095484;
