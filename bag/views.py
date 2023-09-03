@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from materials.models import Material
@@ -13,13 +13,16 @@ def view_bag(request):
 def adjust_bag(request, item_id):
     """ Change product quantity """
 
+    material = get_object_or_404(Material, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
 
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-    else:
+    if quantity > 0:
         bag[item_id] = quantity
+        messages.success(request, f'Updated {material.name} quantity to {bag[item_id]}')
+    else:
+        bag.pop(item_id)
+        messages.success(request, f'Removed {material.name} from your bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -35,9 +38,10 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
+        messages.success(request, f'Updated {material.name} quantity to {bag[item_id]}')
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {material.name} to your bag')
+        messages.success(request, f'Included {material.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -45,11 +49,15 @@ def add_to_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """ Change product quantity """
+    
     bag = request.session.get('bag', {})
     try:
+        material = get_object_or_404(Material, pk=item_id)
         bag.pop(item_id)
+        messages.success(request, f'Removed {material.name} from bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
     except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
