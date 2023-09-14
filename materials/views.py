@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Material, Category
+
+from .forms import ProductForm
 
 def all_materials(request):
     """ View for all art materials with sort and search """
@@ -44,3 +47,46 @@ def material_detail(request, material_id):
     }
 
     return render(request, 'materials/material_detail.html', context)
+
+def add_product(request):
+    """ Add a product to the store """
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Material added successfully')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Unable to add material. Please check the form')
+    else:
+        form = ProductForm()
+        
+    template = 'materials/add_materials.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+def edit_product(request, material_id):
+    """ Edit a product in the store """
+    material = get_object_or_404(Material, pk=material_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=material)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('material_detail', args=[material.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=material)
+        messages.info(request, f'You are editing {material.name}')
+
+    template = 'materials/edit_material.html'
+    context = {
+        'form': form,
+        'material': material,
+    }
+
+    return render(request, template, context)
