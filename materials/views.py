@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Material, Category
 
 from .forms import ProductForm
+
 
 def all_materials(request):
     """ View for all art materials with sort and search """
@@ -37,6 +39,7 @@ def all_materials(request):
 
     return render(request, 'materials/materials.html', context)
 
+
 def material_detail(request, material_id):
     """ View for material details """
 
@@ -48,8 +51,13 @@ def material_detail(request, material_id):
 
     return render(request, 'materials/material_detail.html', context)
 
+
+@login_required
 def add_product(request):
     """ Add a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This feature is only available to store admin.')
+        return redirect(reverse('home'))
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -68,8 +76,13 @@ def add_product(request):
 
     return render(request, template, context)
 
+
+@login_required
 def edit_product(request, material_id):
     """ Edit a product in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This feature is only available to store admin.')
+        return redirect(reverse('home/'))
     material = get_object_or_404(Material, pk=material_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=material)
@@ -90,3 +103,15 @@ def edit_product(request, material_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_material(request, material_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This feature is only available to store admin.')
+        return redirect(reverse('home'))
+    material = get_object_or_404(Material, pk=material_id)
+    material.delete()
+    messages.success(request, 'Item deleted!')
+    return redirect(reverse('materials'))
