@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$lxp14b!(0chv4@li7o-7)ziq#m&lpmn5as83_q#4anqsde_bk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['art-connoisseur.herokuapp.com' ,'8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu104.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['art-connoisseur.herokuapp.com', 'art-connoisseur-a8261f99bee6.herokuapp.com', '8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu104.gitpod.io', 'localhost']
 
 
 # Application definition
