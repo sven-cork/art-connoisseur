@@ -3,7 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
-from .models import Material, Category
+from .models import Material, Category, HarmfulMaterials
+
 
 from .forms import ProductForm
 
@@ -44,9 +45,11 @@ def material_detail(request, material_id):
     """ View for material details """
 
     material = get_object_or_404(Material, pk=material_id)
+    harm_name = HarmfulMaterials.harm_category.get(material.harmful_content, None)
 
     context = {
         'material': material,
+        'harm_name': harm_name,
     }
 
     return render(request, 'materials/material_detail.html', context)
@@ -115,3 +118,4 @@ def delete_material(request, material_id):
     material.delete()
     messages.success(request, 'Item deleted!')
     return redirect(reverse('materials'))
+

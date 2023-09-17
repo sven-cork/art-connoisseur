@@ -20,6 +20,16 @@ body {
     width: 1.5rem;
 }
 
+.events-background {
+    background-color: #17a2b8;
+    min-height: 100vh;
+    background-image: none !important;
+}
+
+.events-div {
+    padding-top: 30px;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -233,14 +243,14 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 140px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile display */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 40px;
     }
 
     body {
@@ -251,7 +261,7 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on smallest sized mobile display */
 @media (max-width: 380px) {
     .header-container {
-        padding-top: 170px;
+        padding-top: 40px;
     }
 
     body {
