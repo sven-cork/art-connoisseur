@@ -21,13 +21,31 @@ body {
 }
 
 .events-background {
-    background-color: #17a2b8;
+    background-color: #93cfcf;
     min-height: 100vh;
-    background-image: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .events-div {
     padding-top: 30px;
+}
+
+/* Style the cards */
+.card {
+    margin: 10px;
+}
+
+.card-body-event {
+    background-color: #e76536;
+    color: #fff;
+}
+
+/* Make the images within the cards responsive */
+.card-img-top {
+    max-width: 100%;
+    height: auto;
 }
 
 .logo-font {
