@@ -23,52 +23,52 @@
         <!-- Cards Section -->
         <div class="row">
             <!-- First column of first row -->
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="../../media/greek_statue_rawpixel_freepik.jpg" class="card-img-top" alt="...">
+                    <img src="../../media/greek_statue_rawpixel_freepik.jpg" class="card-img-top" alt="..." data-toggle="modal" data-target="#commentModal" data-event-id="{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">June 27-30, Aix En Provence</p>
                         <p class="card-text">Plein Air painting in Provence.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="../../media/artist_holding_brushes_right.jpg" class="card-img-top" alt="...">
+                    <img src="../../media/artist_holding_brushes_right.jpg" class="card-img-top" alt="..." data-toggle="modal" data-target="#commentModal" data-event-id="{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="../../media/greek_statue_rawpixel_freepik.jpg" class="card-img-top" alt="...">
+                    <img src="../../media/greek_statue_rawpixel_freepik.jpg" class="card-img-top" alt="..." data-toggle="modal" data-target="#commentModal" data-event-id="{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">June 27-30, Aix En Provence</p>
                         <p class="card-text">Plein Air painting in Provence.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="../../media/artist_holding_brushes_right.jpg" class="card-img-top" alt="...">
+                    <img src="../../media/artist_holding_brushes_right.jpg" class="card-img-top" alt="..." data-toggle="modal" data-target="#commentModal" data-event-id="{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="../../media/greek_statue_rawpixel_freepik.jpg" class="card-img-top" alt="...">
+                    <img src="../../media/greek_statue_rawpixel_freepik.jpg" class="card-img-top" alt="..." data-toggle="modal" data-target="#commentModal" data-event-id="{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">June 27-30, Aix En Provence</p>
                         <p class="card-text">Plein Air painting in Provence.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="../../media/artist_holding_brushes_right.jpg" class="card-img-top" alt="...">
+                    <img src="../../media/artist_holding_brushes_right.jpg" class="card-img-top" alt="..." data-toggle="modal" data-target="#commentModal" data-event-id="{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
@@ -76,6 +76,51 @@
             </div>
         </div>
         <!-- End Cards Section -->
+        <div class="row text-center mt-3">
+            <div class="col">
+                <h2 class="logo-font">Upcoming events coming soon...</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
     </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="commentModalLabel">Add a Comment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Comment form will go here -->
+                <div>
+                    <p>Location: Aix En Provence.</p>
+                    <p>Date: 1-7 July 2023.</p>
+                    <p>Join us to visit a classic destination for artist through the centuries: Aix En Provence in the South of France.</p>
+                    <p>Stay in Ville Lacombe retreat with close access to local amenites and restaruants.</p>
+                    <p>Instructor lead classes and plain-air sessions each day.</p>
+                </div>
+                <div id="comment">
+
+                </div>
+                <form method="post" action="{% url 'submit_comment' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="event_id" value="{{ event.id }}">
+                    <div class="form-group">
+                        <label for="comment">Your Comment:</label>
+                        <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Comment</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}
