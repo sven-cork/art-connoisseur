@@ -153,6 +153,22 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e76536;
+    padding: 20px;
+}
+
+.footer-left {
+    text-align: center; /* Align the content in the left div to the left */
+}
+
+.footer-right {
+    text-align: center; /* Align the content in the right div to the right */
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

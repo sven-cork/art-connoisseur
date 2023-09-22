@@ -26,10 +26,11 @@
             {% for event in events %}
             <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 border-1">
-                    <img src="{{ event.image.url }}" class="card-img-top event-image" alt="{{ event.title }}" data-toggle="modal" data-target="#commentModal">
+                    <img src="{{ event.image.url }}" class="card-img-top event-image" data-event-id="{{ event.id }}" alt="{{ event.title }}" data-toggle="modal" data-target="#commentModal{{ event.id }}">
                     <div class="card-body card-body-event">
                         <p class="card-text">{{ event.date }}</p>
                         <p class="card-text">{{ event.description }}</p>
+                        
                     </div>
                 </div>
             </div>
@@ -46,8 +47,9 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+{% for event in events %}
+<!-- Event modal -->
+<div class="modal fade" id="commentModal{{ event.id }}" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -57,13 +59,13 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Comment form will go here -->
+                <!-- Comment form -->
                 <div>
-                    <p>Location: <span id="modal-location"></span></p>
-                    <p>Date: <span id="modal-date"></span></p>
-                    <p id="modal-description"></p>
+                    <p>Location: <span id="modal-location{{ event.id }}"></span></p>
+                    <p>Date: <span id="modal-date{{ event.id }}"></span></p>
+                    <p id="modal-description{{ event.id }}"></p>
                 </div>
-                <form method="post" action="{% url 'submit_comment' %}">
+                <form method="post" action="{% url 'submit_comment' %}" id="comment-form{{ event.id }}" data-event-id="{{ event.id }}">
                     {% csrf_token %}
                     <div class="form-group">
                         <label for="comment">Your Comment:</label>
@@ -71,26 +73,91 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit Comment</button>
                 </form>
-                <div class="card-body"></div>
+                <div class="card-body comments-section{{ event.id }}">
+                    <!-- Event comment -->
+                    {% for comment in comments %}
+                        {% if comment.event_id == event.id %}
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="comment-info">By {{ comment.user }} on {{ comment.timestamp }}</p>
+                                <p>{{ comment.content }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% empty %}
+                        <p>No comments yet.</p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
 </div>
+{% endfor %}
 
 {% block extra_js %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.event-image').on('click', function(){
-            // Extract details from the clicked card
+            // Details from selected card
             let location = $(this).next().find('.card-text').first().text();
             let description = $(this).next().find('.card-text').last().text();
             let date = $(this).next().find('.card-text').first().next().text();
+            let eventId = $(this).data('event-id');
 
-            // Populate the modal with these details
-            $('#modal-location').text(location);
-            $('#modal-description').text(description);
-            $('#modal-date').text(date);
+            // Details that will be visible in the modal
+            $('#modal-location' + eventId).text(location);
+            $('#modal-description' + eventId).text(description);
+            $('#modal-date' + eventId).text(date);
+
+            // Loading comments
+            $.ajax({
+                url: "{% url 'load_comments' %}",
+                method: 'GET',
+                data: {event_id: eventId},
+                success: function(data) {
+                    $('.comments-section' + eventId).html(data.comments_html);
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        });
+
+        // Form submissions
+        $('[id^="comment-form"]').on('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get comment content
+            let commentContent = $(this).find('textarea#comment').val();
+
+            let eventId = $(this).data('event-id');
+
+            // Create a new comment element
+            let commentElement = $('<div class="card">');
+            let commentBody = $('<div class="card-body">');
+            commentBody.append($('<p>').text(commentContent));
+            commentElement.append(commentBody);
+
+            $('.comments-section' + eventId).append(commentElement);
+
+            $(this).find('textarea#comment').val('');
+
+            $.ajax({
+                url: "{% url 'submit_comment' %}",
+                method: 'POST',
+                data: {
+                    event_id: eventId,
+                    comment: commentContent,
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                success: function(data) {
+                    // Handle success if needed
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
         });
     });
 </script>
