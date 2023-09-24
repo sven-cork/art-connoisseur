@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'profiles',
     'events',
+    'newsletter',
 ]
 
 MIDDLEWARE = [
@@ -147,6 +148,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+print(DATABASES)
 
 # DATABASES = {
 #    'default': dj_database_url.parse('postgres://eiwloghv:xakyPKLH23jVXeiV7UEztDqekw2hMQQz@tai.db.elephantsql.com/eiwloghv')

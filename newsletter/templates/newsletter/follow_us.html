@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid" style="margin-bottom: 60px;">
+    <div class="row h-100">
+        <div class="col-12">
+            <div class="container">
+                <header class="row">
+                    <div class="col-12">
+                        <h1>Follow Us</h1>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container h-100">
+                <div class="row h-100 body-content">
+                    <div class="col-md-12">
+                        <div class="card h-100 border-1">
+                            <h2>Left Div</h2>
+                            <p>This is the left content.</p>
+                            <!-- Add your content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container h-100">
+                <div class="row h-100 body-content">
+                    <div class="col-md-12">
+                        <div id="mc_embed_shell">
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                            <style type="text/css">
+                                #mc_embed_signup {
+                                    background: #fff;
+                                    clear: left;
+                                    font: 14px Helvetica, Arial, sans-serif;
+                                    max-width: 400px; 
+                                    margin: 0 auto; 
+                                }
+                            </style>
+                            <div id="mc_embed_signup">
+                                <form action="https://gmail.us21.list-manage.com/subscribe/post?u=2873776d630642e0c5611d504&amp;id=f1bf9b3b89&amp;f_id=000ce3e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <h2>Stay up to date with our newsletter</h2>
+                                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                        </div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                                            <input type="text" name="b_2873776d630642e0c5611d504_f1bf9b3b89" tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iAkr1s" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container-fluid {
+        flex: 1;
+    }
+</style>
+{% endblock %}

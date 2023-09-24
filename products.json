@@ -1,0 +1,1 @@
+{'default': {'NAME': 'eiwloghv', 'USER': 'eiwloghv', 'PASSWORD': 'xakyPKLH23jVXeiV7UEztDqekw2hMQQz', 'HOST': 'tai.db.elephantsql.com', 'PORT': '', 'CONN_MAX_AGE': 0, 'ENGINE': 'django.db.backends.postgresql_psycopg2'}}
