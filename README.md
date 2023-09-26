@@ -33,8 +33,9 @@
 
 
 ## Django Bakery Introduction
-Django bakery is a website for lovers of baked goods to share their recipies and leave feedback to other contributors.
-With a registered account users can add, comment, like, edit and delete recipies. 
+Art Connoisseur is an eCommerce shop that has just established itself with the aim of providing artists and hobbiests alike with a range
+of art materials from budget to quality materials. At the moment the offering is small in quantity however growing for each week.
+Art Connoisseur also provides information about art related events, workshops, drawing walks or historical trips for the art community.
 The live website can be accessed here [Django Bakery](https://django-baker-862762494240.herokuapp.com/).
 
 ## UX

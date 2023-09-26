@@ -3,13 +3,8 @@
 
 {% block page_header %}
     <div class="container header-container">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
+        <div class="row"></div>
     </div>
-        
 {% endblock %}
 
 {% block content %}
@@ -19,7 +14,6 @@
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Materials</h2>
                 <hr class="w-50 mb-1">
-
             </div>
         </div>
         <div class="row">
@@ -27,17 +21,13 @@
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
                     {% for material in materials %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4"> <!-- Add mb-4 class to add margin to the bottom of each card -->
                             <div class="card h-100 border-1">
-                                {% if material.image %}
                                 <a href="{% url 'material_detail' material.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ material.image.url }}" alt="{{ material.name }}">
+                                    <img class="card-img-top img-fluid" 
+                                         src="{% if material.image %}{{ material.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" 
+                                         alt="{{ material.name }}">
                                 </a>
-                                {% else %}
-                                <a href="{% url 'material_detail' material.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ material.name }}">
-                                </a>
-                                {% endif %}
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ material.name }}</p>
                                 </div>
@@ -65,18 +55,15 @@
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
                             </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
+                        {% elif forloop.counter|divisibleby:2 %}
                             <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
                                 <hr>
                             </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
+                        {% elif forloop.counter|divisibleby:3 %}
                             <div class="col-12 d-none d-lg-block d-xl-none mb-5">
                                 <hr>
                             </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
+                        {% elif forloop.counter|divisibleby:4 %}
                             <div class="col-12 d-none d-xl-block mb-5">
                                 <hr>
                             </div>
@@ -86,4 +73,5 @@
             </div>
         </div>
     </div>
+    <div class="mb-5"></div> <!-- Add margin at the bottom to create space between cards and footer -->
 {% endblock %}
