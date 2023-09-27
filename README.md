@@ -33,7 +33,7 @@
 
 
 ## Django Bakery Introduction
-Art Connoisseur is an eCommerce shop that has just established itself with the aim of providing artists and hobbiests alike with a range
+Art Connoisseur is an eCommerce shop that has just established itself with the aim of providing artists and hobbyists alike with a range
 of art materials from budget to quality materials. At the moment the offering is small in quantity however growing for each week.
 Art Connoisseur also provides information about art related events, workshops, drawing walks or historical trips for the art community.
 The live website can be accessed here [Django Bakery](https://django-baker-862762494240.herokuapp.com/).
@@ -41,7 +41,7 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 ## UX
 ### Agile Methodology
 
-[GitHub projectboard](https://github.com/users/sven-cork/projects/10) was used to implement user stories for Django Bakery project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
+[GitHub projectboard](https://github.com/users/sven-cork/projects/11/views/1) was used to implement user stories for Art Connoisseur project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
 
 ![GitHub Issues](assets/images/github_issues.png)
 
@@ -65,31 +65,18 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 ![Add recipie](assets/images/wireframe_login.png)
 
 ## User Stories
-  - As a site user I want to be able to navigate the website effectively
-  - As a site user I want to sign up easily for a registered account
-  - As a site user I can view comments for past events and evaluate the feedback for future events
-  - As a site user I can sign up to Art Connoisseur newsletter to receive updates on new products and events
-  - As a site user I can browse materials on the store based on category
-  - As a registered user I can login and logout of my account to access my shopping bag, previous orders and profile
-  - As a registered user I can remove items in my shopping bag or update the quantity
-  - As a registered user I can
-
-
-  ### View Recipie
-
-
-  ### Add Recipie Page
-  
-
-  ### Update Recipie Page
-
-
-  ### Login Page
-
-  ### Register Page
-
-
-  ### Logout Page
+  - As a site user I want to be able to navigate the website effectively.
+  - As a site user I want to sign up easily for a registered account.
+  - As a site user I can view comments for past events and evaluate the feedback for future events.
+  - As a site user I can sign up to Art Connoisseur newsletter to receive updates on new products and events.
+  - As a site user I can browse materials on the store based on category.
+  - As a site user I can use the social media link for Meta to access Art Connoisseur.
+  - As a site user I appreciate a harmonious website design with regards to colour scheme and balance
+  - As a registered user I can login and logout of my account to access my shopping bag, previous orders and profile.
+  - As a registered user I can remove items in my shopping bag or update the quantity.
+  - As a registered user I can add items to the bag and return later to add more items without loosing any existing products.
+  - As a registered user I receive an order confirmation upon completing a purchase.
+  - As a registered user I can start a purchase from the pop-up notification or from  inside the bag.
 
 
 ## Features
