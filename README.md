@@ -65,7 +65,14 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 ![Add recipie](assets/images/wireframe_login.png)
 
 ## User Stories
-  ### Start Page
+  - As a site user I want to be able to navigate the website effectively
+  - As a site user I want to sign up easily for a registered account
+  - As a site user I can view comments for past events and evaluate the feedback for future events
+  - As a site user I can sign up to Art Connoisseur newsletter to receive updates on new products and events
+  - As a site user I can browse materials on the store based on category
+  - As a registered user I can login and logout of my account to access my shopping bag, previous orders and profile
+  - As a registered user I can remove items in my shopping bag or update the quantity
+  - As a registered user I can
 
 
   ### View Recipie

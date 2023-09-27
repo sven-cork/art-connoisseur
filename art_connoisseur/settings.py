@@ -35,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['art-connoisseur.herokuapp.com', 'art-connoisseur-a8261f99bee6.herokuapp.com', '8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu104.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['art-connoisseur.herokuapp.com', 'art-connoisseur-a8261f99bee6.herokuapp.com', '8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu105.gitpod.io', '8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu104.gitpod.io', 'localhost']
 
 
 # Application definition
