@@ -105,12 +105,10 @@
             let date = $(this).next().find('.card-text').first().next().text();
             let eventId = $(this).data('event-id');
 
-            // Details that will be visible in the modal
             $('#modal-location' + eventId).text(location);
             $('#modal-description' + eventId).text(description);
             $('#modal-date' + eventId).text(date);
 
-            // Loading comments
             $.ajax({
                 url: "{% url 'load_comments' %}",
                 method: 'GET',
@@ -126,14 +124,13 @@
 
         // Form submissions
         $('[id^="comment-form"]').on('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault();
 
-            // Get comment content
             let commentContent = $(this).find('textarea#comment').val();
 
             let eventId = $(this).data('event-id');
 
-            // Create a new comment element
+            // new comment element
             let commentElement = $('<div class="card">');
             let commentBody = $('<div class="card-body">');
             commentBody.append($('<p>').text(commentContent));
@@ -152,7 +149,7 @@
                     csrfmiddlewaretoken: '{{ csrf_token }}'
                 },
                 success: function(data) {
-                    // Handle success if needed
+                
                 },
                 error: function(error) {
                     console.log(error);

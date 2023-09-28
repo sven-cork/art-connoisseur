@@ -22,14 +22,45 @@
 
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
-  | Select "Home" in Navigation bar | Renders Homepage | Pass |
-  | Select "Add Recipie" in Navigation bar | Renders Add Recipie page | Pass |
-  | Select "Register" in Navigation bar | Renders Register page | Pass |
-  | Select "Login" in Navigation bar | Renders Login page | Pass |
-  | Select "Logout" in Navigation bar | Renders Logout validation | Pass |
-  | Select "Sign Out" button on "Logout" page | Logs out user and renders Homepage | Pass |
-  | On "Register" page enter username and password values | Creates new site user | Pass |
-  | On "Add Recipie" page enter values for "Title" and "Content", choose a category and select "Update" button  | Adds a new recipie rendered on Homepage | Pass |
+  | Select "All Materials > All Materials" in Navigation bar | Renders "All Materials" page | Pass |
+  | Select "Paints > Pigment Rich Oils" in Navigation bar | Renders "Pigment Rich Oil"s | Pass |
+  | Select "Paints > Acrylics" in Navigation bar | Renders "Acrylics" | Pass |
+  | Select "Paints > Student Oils" in Navigation bar | Renders "Studend Oils" | Pass |
+  | Select "Paints > All Paints" in Navigation bar | Renders "All Paints" | Pass |
+  | Select "Canvas > Linen Canvas" in Navigation bar | Renders "Linen Canvas" | Pass |
+  | Select "Canvas > Cotton Canvas" in Navigation bar | Renders "Cotton Canvas" | Pass |
+  | Select "Canvas > All Canvas" in Navigation bar | Renders "All Canvas" | Pass |
+  | Select "Paper > Acrylic & Oil Paper" in Navigation bar | Renders "Acrylic & Oil Paper" | Pass |
+  | Select "Paper > Drawing Paper" in Navigation bar | Renders "Drawing Paper" | Pass |
+  | Select "Paper > All Paper" in Navigation bar | Renders "All Paper" | Pass |
+  | Select "Draw > Graphite Pencils" in Navigation bar | Renders "Graphite Pencils" | Pass |
+  | Select "Draw > Coals" in Navigation bar | Renders "Coals" | Pass |
+  | Select "Draw > Brushes" in Navigation bar | Renders "Brushes" | Pass |
+  | Select "Draw > All Drawing" in Navigation bar | Renders "All Drawing" | Pass |
+  | Select "Event" in Navigation bar | Renders "Event" page | Pass |
+  | Select "Follow Us" in Navigation bar | Renders "Follow Us" page | Pass |
+  | Select "Follow Us" in Navigation bar | Renders "Follow Us" page | Pass |
+  | Select "My Account" in Navigation bar | Renders "My Account" drop menu with options | Pass |
+  | Select "My Account > Product Management" in Navigation bar | Renders "Manage Materials" page | Pass |
+  | Select "My Account > My Profile" in Navigation bar | Renders "My Profile" page | Pass |
+  | Select "My Account > Logout in Navigation bar | Renders "Logout" page | Pass |
+  | Select bag in Navigation bar | Renders "Bag" page | Pass |
+
+  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select "Edit" | Renders "Manage Material" page | Pass |
+  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select "Delete" | Removes the material and produces success message | Pass |
+  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select thumbnail and "ADD TO BAG" | Adds material to bag | Pass |
+  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select thumbnail and adjust quantity | Adjust quantity up or down | Pass |
+
+  | In checkout view, add information in all fields, add payment information, select "Complete Order" | Order completes with success message, order "Get 200" success message in IDE Terminal | Pass |
+
+  | In Cart view, increase or decrease quantity of material items > Select "Update" | The correct quantity is displayed and updated | Pass |
+  | In Cart view, remove an item by selecting "Remove" | The item is removed from the cart | Pass |
+  | In Cart view, select "Continue Shopping" | All materials page is rendered | Pass |
+
+  | In Event view, select any card thumbnail > opens card modal | Card modal is rendered | Pass |
+  | In Event modal window > enter text in "Your Comment" textarea and select "Submit Comment" | The comment is saved to database and rendered in modal window | Pass |
+
+  | In Follow Us view, enter email address in "Email Address" field and select "Subscribe" | Confirmation displayed | Pass |
 
   ### Home Page
   ___
