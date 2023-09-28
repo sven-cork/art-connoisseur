@@ -46,20 +46,30 @@
   | Select "My Account > Logout in Navigation bar | Renders "Logout" page | Pass |
   | Select bag in Navigation bar | Renders "Bag" page | Pass |
 
-  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select "Edit" | Renders "Manage Material" page | Pass |
-  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select "Delete" | Removes the material and produces success message | Pass |
-  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select thumbnail and "ADD TO BAG" | Adds material to bag | Pass |
-  | For any material under (All Materials, Paints, Canvas, Paper, Draw), select thumbnail and adjust quantity | Adjust quantity up or down | Pass |
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
+  | For any material under: All Materials, Paints, Canvas, Paper or Draw; select "Edit" | Renders "Manage Material" page | Pass |
+  | For any material under: All Materials, Paints, Canvas, Paper, Draw; select "Delete" | Removes the material and produces success message | Pass |
+  | For any material under: All Materials, Paints, Canvas, Paper, Draw; select thumbnail and "ADD TO BAG" | Adds material to bag | Pass |
+  | For any material under: All Materials, Paints, Canvas, Paper, Draw; select thumbnail and adjust quantity | Adjust quantity up or down | Pass |
 
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
   | In checkout view, add information in all fields, add payment information, select "Complete Order" | Order completes with success message, order "Get 200" success message in IDE Terminal | Pass |
 
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
   | In Cart view, increase or decrease quantity of material items > Select "Update" | The correct quantity is displayed and updated | Pass |
   | In Cart view, remove an item by selecting "Remove" | The item is removed from the cart | Pass |
   | In Cart view, select "Continue Shopping" | All materials page is rendered | Pass |
 
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
   | In Event view, select any card thumbnail > opens card modal | Card modal is rendered | Pass |
   | In Event modal window > enter text in "Your Comment" textarea and select "Submit Comment" | The comment is saved to database and rendered in modal window | Pass |
 
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
   | In Follow Us view, enter email address in "Email Address" field and select "Subscribe" | Confirmation displayed | Pass |
 
   ### Home Page
