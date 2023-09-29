@@ -20,6 +20,9 @@
 
 - [Features](#features)
 
+- [Web Marketing](#web-marketing)
+  - [Social Media Marketing](#social-media-marketing)
+
 - [Testing, Validation and Performance](#testing-validation-and-performance)
 
 - [Deployment](#deployment)
@@ -115,6 +118,11 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 
   ![Screenshot of Login page](assets/images/features_sign_out.png)
 
+## Web Marketing
+
+### Social Media Marketing
+The initial phase of social media marketing was a Facebook launch for Art Connoiseur.
+![FaceBook Page](media/social_marketing_fb.png)
 
 ## Testing, Validation and Performance
 
