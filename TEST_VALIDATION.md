@@ -216,7 +216,8 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 ### JavaScript Validation
  JavaCript validation was carried out using [jshint](https://jshint.com/).
-  [![JavaScript validation with jshint](assets/images/jshint.png)]
+ Alert regarding 'let' variable availability in ES6.
+  [![JavaScript validation with jshint](media/jshint.png)]
 
 
 ### Python Validation

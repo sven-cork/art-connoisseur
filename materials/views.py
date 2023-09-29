@@ -118,4 +118,3 @@ def delete_material(request, material_id):
     material.delete()
     messages.success(request, 'Item deleted!')
     return redirect(reverse('materials'))
-
