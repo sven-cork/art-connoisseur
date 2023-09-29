@@ -1,0 +1,30 @@
+<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 border-1">
+        <a href="{% url 'material_detail' material.id %}">
+            <img class="card-img-top img-fluid" 
+                 src="{% if material.image %}{{ material.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" 
+                 alt="{{ material.name }}">
+        </a>
+        <div class="card-body pb-0">
+            <p class="mb-0">{{ material.name }}</p>
+        </div>
+        <div class="card-footer bg-white pt-0 border-0 text-left">
+            <div class="row">
+                <div class="col">
+                    <p class="lead mb-0 text-left font-weight-bold">${{ material.price }}</p>
+                    {% if material.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ material.rating }} / 5</small>
+                    {% else %}
+                        <small class="text-muted">No Rating</small>
+                    {% endif %}
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="{% url 'edit_material' material.id %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_material' material.id %}">Delete</a>
+                        </small>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
