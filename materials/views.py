@@ -28,7 +28,7 @@ def all_materials(request):
             if not query:
                 messages.error(request, "No search criteria provided")
                 return redirect(reverse('materials'))
-            
+
             queries = Q(name__icontains=query) | Q(type__icontains=query)
             materials = materials.filter(queries)
 
@@ -71,7 +71,7 @@ def add_product(request):
             messages.error(request, 'Unable to add material. Please check the form')
     else:
         form = ProductForm()
-        
+
     template = 'materials/add_materials.html'
     context = {
         'form': form,

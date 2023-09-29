@@ -71,41 +71,6 @@
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
   | In Follow Us view, enter email address in "Email Address" field and select "Subscribe" | Confirmation displayed | Pass |
-
-  ### Home Page
-  ___
-
-  | Action | Expected Behaviour | Pass/Fail |
-  |--------|--------------------|-----------|
-  | Select a recipie to read content | Renders the recipie selected | Pass |
-
-  ### Add Recipie Page
-  ___
-
-  | Action | Expected Behaviour | Pass/Fail |
-  |--------|--------------------|-----------|
-  | Add title | Title rendered when viewing recipie details | Pass |
-  | Add content | Ingredients rendered when viewing recipie details | Pass |
-  | Select category | Picture belonging to selected category rendered when viewing recipie details | Pass |
-  | Select allergy | Allergy warning rendered when viewing recipie details | Pass |
-
-  ### Update Recipie Page
-  ___
-
-  | Action | Expected Behaviour | Pass/Fail |
-  |--------|--------------------|-----------|
-  | Edit title | Updated title rendered when viewing recipie details | Pass |
-  | Edit content | Updated ingredients rendered when viewing recipie details | Pass |
-  | Edit category | Picture belonging to edited category rendered when viewing recipie details | Pass |
-  | Select allergy | New allergy warning rendered when viewing recipie details | Pass |
-
-  ### Login / Register Page
-  ___
-
-  | Action | Expected Behaviour | Pass/Fail |
-  |--------|--------------------|-----------|
-  | Login with username and password | User successfully logged in to Home page | Pass |
-  | Register account | Provide username, password and confirm password. Account created | Pass |
   
 
 ## Browser and Device Compatibility
@@ -210,8 +175,8 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 
 ### CSS Validation
- CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/).
-  [![W3C CSS Validator Checker](assets/images/css_checker.png)]
+ CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/). No issues reported.
+  [![W3C CSS Validator Checker](media/css_validator.png)]
 
 
 ### JavaScript Validation
@@ -221,28 +186,15 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 
 ### Python Validation
-  Python testing was carried out using pep8 in GitPod IDE and [CI Python Linter](https://pep8ci.herokuapp.com/).
-  No errors reported however several notifications of lines being too long. From researching previous student project work, it is my understanding that this does not indicate invalid code, however a preference of style. 
-
-  <details>
-  <summary>Python Validation</summary>
-  <br>
-
-  | .py file | CI Python Linter Result|
-  |--------|--------------------|
-  | settings.py | [![settings.py Python Linter result screenshot](assets/images/settings.py_python_linter.png)] |
-  | urls.py | [![urls.py Python Linter result screenshot](assets/images/urls.py_python_linter.png)] |
-  | forms.py | [![forms.py Python Linter result screenshot](assets/images/forms.py_python_linter.png)] |  
-  | models.py | [![models.py Python Linter result screenshot](assets/images/models.py_python_linter.png)] |  
-  | views.py | [![views.py Python Linter result screenshot](assets/images/views.py_python_linter.png)] |  
+  Python testing was carried out using pep8 in GitPod IDE and [CI Python Linter](https://pep8ci).
+  The following alerts were corrected: "no newline at end of file" and "blank line contains whitespace". Apart from this there are only remaining alerts regarding line being too long (>79 character). However I understand this is a preference of style and not an error.
   
-  </details> 
   
   ## Bugs
   ___
 
-  - While testing the comment feature in recipie_content.html, adding one comment to a recipie, I noticed the
-  comment counter for this recipie had increased with 10 comments despite only one comment being submitted and awaiting admin approval. On the '/admin' page I confirmed 10 comments awaiting approval.
-  No changes to the django code was performed in around the time of this issue and I was not able to reproduce the issue. Potentially this may have been linked to ongoing issues with the Wifi network, to which the computer running the cloud based IDE (GitPod) was connected. 
+  - Non registered users placing orders returning error. This was corrected ensuring only registered users having the option to checkout.
+
+
  
   

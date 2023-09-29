@@ -5,6 +5,7 @@ from django.http import JsonResponse
 from django.template.loader import render_to_string
 from django.views.decorators.http import require_POST
 
+
 def event_detail(request, event_id):
     event = get_object_or_404(Event, id=event_id)
     comments = event.comments.all()
@@ -12,6 +13,7 @@ def event_detail(request, event_id):
 
 
 def load_comments(request):
+    """ display comment """
     event_id = request.GET.get('event_id')
     event = Event.objects.get(id=event_id)
     comments = event.comments.all()
@@ -21,11 +23,13 @@ def load_comments(request):
 
 
 def events(request):
+    """ return events """
     events = Event.objects.all()
     return render(request, 'events/events.html', {'events': events})
 
 
 def submit_comment(request):
+    """ post comment """
     if request.method == 'POST':
         event_id = request.POST.get('event_id')
         event = get_object_or_404(Event, id=event_id)
@@ -43,5 +47,3 @@ def submit_comment(request):
         return JsonResponse({'comment': comment_data})
 
     return JsonResponse({'error': 'Invalid request'}, status=400)
-
-
