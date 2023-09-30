@@ -97,6 +97,23 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
   ### Lighthouse
   <details>
+  <summary>Home Page</summary>
+  <br>
+
+  - Home Desktop
+
+  [![Lightouse desktop Home page](/media/desktop_home.png)]
+  ___
+
+  - Home Mobile
+
+  [![Lightouse desktop Home page](assets/images/home_desktop.png)]
+  ___
+
+  </details>
+
+  ### Lighthouse
+  <details>
   <summary>Desktop</summary>
   <br>
   
