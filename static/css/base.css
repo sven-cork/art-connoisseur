@@ -6,11 +6,8 @@ body {
     background: url('/media/greek_statue_freepik_freepik.jpg') no-repeat right top fixed;
     background-size: cover;
     background-position: right top;
-    /* Remove height property for the body */
-    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Lato';
-    /* Add flex-grow property to fill remaining vertical space */
     flex-grow: 1;
 }
 
@@ -43,8 +40,6 @@ body {
 }
 
 /* Card styling*/
-
-/* Artistic inspired styling */
 .card {
     margin: 20px;
     border: 2px solid #e76536; 
@@ -86,7 +81,6 @@ body {
     color: #fff !important;
 }
 
-/* Adjusted typography for a more artistic feel */
 .card-body p {
     font-size: 20px;
     color: #555;
@@ -211,7 +205,6 @@ input[name='q']::placeholder {
 .footer {
     background-color: #e76536;
     padding: 20px;
-    /* Fix the footer to the bottom */
     position: sticky;
     bottom: 0;
     left: 0;
