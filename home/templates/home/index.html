@@ -5,19 +5,17 @@
     <div class="container header-container">
         <div class="row">
             <div class="col">
-
             </div>
         </div>
     </div>
-        
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100 body-content">
+    <div class="container">
+        <div class="row body-content">
             <div class="col-7 col-md-6 my-auto special-offer-bar">
                 <h1 class="display-4 logo-font text-black smaller-font">
-                    High quality art products
+                    High-quality art products
                 </h1>
                 <div class="my-5">
                     <h4>
@@ -27,4 +25,16 @@
             </div>
         </div>
     </div>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+        }
+    </style>
 {% endblock %}

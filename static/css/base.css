@@ -6,14 +6,17 @@ body {
     background: url('/media/greek_statue_freepik_freepik.jpg') no-repeat right top fixed;
     background-size: cover;
     background-position: right top;
-    height: calc(100vh - 164px);
+    /* Remove height property for the body */
+    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Lato';
+    /* Add flex-grow property to fill remaining vertical space */
+    flex-grow: 1;
 }
 
 .sign-out-text {
     background-color:#f8f9fa;
-    margin-top: 300px;
+    margin-top: 500px;
     padding: 10px;
 
 }
@@ -206,23 +209,31 @@ input[name='q']::placeholder {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #e76536;
     padding: 20px;
+    /* Fix the footer to the bottom */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .footer a {
-    color: white; 
+    color: white;
 }
 
 .footer-left {
-    text-align: center; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-right {
-    text-align: center; 
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .materials {
@@ -337,6 +348,7 @@ input[name='q']::placeholder {
 
       body {
         background: url('/media/small_screen_greek.jpg');
+        margin-top: 120px;
       }
   }
   
@@ -364,6 +376,13 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+        margin-top: 120px;
+    }
+
+    .sign-out-text {
+        background-color:#f8f9fa;
+        padding: 10px;
+    
     }
 }
 
