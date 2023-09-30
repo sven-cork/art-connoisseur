@@ -237,4 +237,7 @@ Django Bakery was deployed to Heroku as per the below steps:
   - [Graphite pencils](https://www.freepik.com/free-photo/pencil-isolated-white-background_3778278.htm#query=drawing%20graphite%20pencils&position=7&from_view=search&track=ais) image by lifeforstock on freepik 
 
   - [Charcoal sticks](https://www.freepik.com/free-photo/artist-s-black-charcoal-stick-with-smudge-drawing-plain-backdrop_4351682.htm#query=drawing%20graphite%20pencils&position=4&from_view=search&track=ais) image by freepik on freepik 
+
+  - [Subtle Turqois](https://www.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_26782170.htm#query=subtle%20turqois&position=22&from_view=search&track=ais) image by benzoix on freepik 
+  
   

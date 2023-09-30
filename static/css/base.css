@@ -39,21 +39,56 @@ body {
     padding-top: 30px;
 }
 
-/* Style the cards */
+/* Card styling */
+/* ... Your existing CSS ... */
+
+/* Arty Card Enhancements */
 .card {
-    margin: 10px;
+    margin: 20px;
+    border: 2px solid #e76536; /* Decorative border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 13px; /* Maintain rounded corners */
+    border-top-right-radius: 13px;
+    position: relative;
+}
+
+.card-img-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); /* Translucent overlay on the image */
+}
+
+.card-body {
 }
 
 .card-body-event {
     background-color: #e76536;
-    color: #fff;
 }
 
-/* Make the images within the cards responsive */
-.card-img-top {
-    max-width: 100%;
-    height: auto;
+.card-body-event p {
+    color: #fff !important;
 }
+
+/* Adjusted typography for a more artistic feel */
+.card-body p {
+    font-size: 20px;
+    color: #555;
+}
+
 
 .logo-font {
     text-transform: uppercase;
@@ -76,7 +111,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 
