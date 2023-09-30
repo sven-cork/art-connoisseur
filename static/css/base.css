@@ -28,7 +28,7 @@ body {
 }
 
 .events-background {
-    background-color: #93cfcf;
+    background-color: #a1dbd0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -39,25 +39,25 @@ body {
     padding-top: 30px;
 }
 
-/* Card styling */
-/* ... Your existing CSS ... */
+/* Card styling*/
 
-/* Arty Card Enhancements */
+/* Artistic inspired styling */
 .card {
     margin: 20px;
-    border: 2px solid #e76536; /* Decorative border */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+    border: 2px solid #e76536; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* Zoom effect and shadow*/
 .card:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    border-top-left-radius: 13px; /* Maintain rounded corners */
+    border-top-left-radius: 13px;
     border-top-right-radius: 13px;
     position: relative;
 }
@@ -69,7 +69,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.1); /* Translucent overlay on the image */
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
@@ -138,6 +138,16 @@ body {
 }
 
 .cover {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #a1dbd0;
+    z-index: -1;
+}
+
+.cover-material-detail {
     left: 0;
     top: 0;
     width: 100%;
@@ -213,6 +223,10 @@ input[name='q']::placeholder {
 
 .footer-right {
     text-align: center; 
+}
+
+.materials {
+    background-color: #a1dbd0;
 }
 
 #follow-us-div {
@@ -320,6 +334,10 @@ input[name='q']::placeholder {
       #follow-us-div, #mc_embed_shell {
           max-width: 100%;
       }
+
+      body {
+        background: url('/media/small_screen_greek.jpg');
+      }
   }
   
 
@@ -357,6 +375,8 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 170px);
+        background: url('/media/small_screen_greek.jpg');
     }
+
 }
 
