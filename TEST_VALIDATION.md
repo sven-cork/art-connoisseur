@@ -107,84 +107,93 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
   - Home Mobile
 
-  [![Lightouse desktop Home page](assets/images/home_desktop.png)]
+  [![Lightouse mobile Home page](/media/mobile_home.png)]
   ___
 
   </details>
 
-  ### Lighthouse
   <details>
-  <summary>Desktop</summary>
+  <summary>Materials Page</summary>
   <br>
-  
-  - Home page
 
-  [![Lightouse desktop Home page](assets/images/home_desktop.png)]
+  - Materials Desktop
+
+  [![Lightouse desktop Materials page](/media/desktop_materials.png)]
   ___
 
-  - View Recipie Detauls page
+  - Materials Mobile
 
-  [![Lightouse desktop View Recipie page](assets/images/view_recipie_desktop.png)]
+  [![Lightouse mobile Materials page](/media/mobile_materials.png)]
   ___
-
-  - Add Recipie page
-
-  [![Lightouse Add Recipie desktop page](assets/images/addrecipie_desktop.png)]
-  ___
-
-  - Update page
-
-  [![Lightouse Add Recipie desktop Page](assets/images/update_desktop.png)]
-  ___
-
-  - Register page
-
-  [![Lightouse Register desktop Page](assets/images/register_desktop.png)]
-  ___
-
-  - Login
-
-  [![Lightouse Login desktop Page](assets/images/login_desktop.png)]
-  ___
-
-  - Logout
-
-  [![Lightouse Logout desktop page](assets/images/logout_desktop.png)]
-  ___
-
- </details>
-
-  <details>
-  <summary>Mobile</summary>
-  <br>
-  
-  Home page
-  [![Lightouse desktop Home page](assets/images/home_mobile.png)]
-
-  View Recipie Details page
-  [![Lightouse desktop View Recipie page](assets/images/view_recipie_mobile.png)]
-
-  - Add Recipie page
-
-  [![Lightouse Add Recipie desktop page](assets/images/addrecipie_mobile.png)]
-
-  - Update page
-
-  [![Lightouse Add Recipie desktop Page](assets/images/update_mobile.png)]
-
-  - Register page
-
-  [![Lightouse Register desktop Page](assets/images/register_mobile.png)]
-
-  - Login
-  
-  [![Lightouse Login desktop Page](assets/images/login_mobile.png)]
-
-  - Logout
-
-  [![Lightouse Logout desktop page](assets/images/logout_mobile.png)]
 
   </details>
+
+    </details>
+
+  <details>
+  <summary>Events Page</summary>
+  <br>
+
+  - Events Desktop
+
+  [![Lightouse desktop Materials page](/media/desktop_events.pngg)]
+  ___
+
+  - Events Mobile
+
+  [![Lightouse mobile Materials page](/media/mobile_events.png)]
+  ___
+
+  </details>
+
+  <details>
+  <summary>Newsletter Page</summary>
+  <br>
+
+  - Newsletter Desktop
+
+  [![Lightouse desktop Materials page](/media/desktop_newsletter.png)]
+  ___
+
+  - Newsletter Mobile
+
+  [![Lightouse mobile Materials page](/media/mobile_newsletter.png)]
+  ___
+
+  </details>
+
+  <details>
+  <summary>Login Page</summary>
+  <br>
+
+  - Login Desktop
+
+  [![Lightouse desktop Materials page](/media/desktop_login.png)]
+  ___
+
+  - Login Mobile
+
+  [![Lightouse mobile Materials page](/media/mobile_login.png)]
+  ___
+
+  </details>
+
+  <details>
+  <summary>Register Page</summary>
+  <br>
+
+  - Register Desktop
+
+  [![Lightouse desktop Materials page](/media/desktop_register.png)]
+  ___
+
+  - Register Mobile
+
+  [![Lightouse mobile Materials page](/media/mobile_register.png)]
+  ___
+
+  </details>
+
 
 ### HTML Validation
  HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/).
