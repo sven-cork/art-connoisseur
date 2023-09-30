@@ -128,15 +128,13 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
   </details>
 
-    </details>
-
   <details>
   <summary>Events Page</summary>
   <br>
 
   - Events Desktop
 
-  [![Lightouse desktop Materials page](/media/desktop_events.pngg)]
+  [![Lightouse desktop Materials page](/media/desktop_events.png)]
   ___
 
   - Events Mobile
@@ -202,7 +200,7 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 ### CSS Validation
  CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/). No issues reported.
-  [![W3C CSS Validator Checker](media/css_validator.png)]
+  [![W3C CSS Validator Checker](/media/validation_css.png)]
 
 
 ### JavaScript Validation
