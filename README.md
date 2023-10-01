@@ -1,8 +1,8 @@
-[![Am I responsive screenshot of Django Bakery](assets/images/am_I_responsive.png)]
+[![Am I responsive screenshot of Art Connoisseur](/media/I_am_responsive.png)]
 
 
 ## Table of contents
-- [Django Bakery Introduction](#django-bakery-introduction)                                        
+- [Art Connoisseur Introduction](#django-bakery-introduction)                                        
 - [UX](#ux)
   - [User Stories](#user-stories)
   - [Wireframes](#wireframes)
@@ -22,6 +22,7 @@
 
 - [Web Marketing](#web-marketing)
   - [Social Media Marketing](#social-media-marketing)
+  - [Search Engine Optimization](#search-engine-optimization)
 
 - [Testing, Validation and Performance](#testing-validation-and-performance)
 
@@ -35,7 +36,7 @@
 - [Credits](#credits)
 
 
-## Django Bakery Introduction
+## Art Connoisseur Introduction
 Art Connoisseur is an eCommerce shop that has just established itself with the aim of providing artists and hobbyists alike with a range
 of art materials from budget to quality materials. At the moment the offering is small in quantity however growing for each week.
 Art Connoisseur also provides information about art related events, workshops, drawing walks or historical trips for the art community.
@@ -47,25 +48,6 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 [GitHub projectboard](https://github.com/users/sven-cork/projects/11/views/1) was used to implement user stories for Art Connoisseur project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
 
 ![GitHub Issues](assets/images/github_issues.png)
-
-### Wireframes
-  #### Home
-![Home overview](assets/images/wireframe_django_home.png)
-
-  #### View Recipie
-![View recipie](assets/images/wireframes_view_recipie.png)
-
-  #### Add Recipie
-![Add recipie](assets/images/wireframe_add_recipie.png)
-
-  #### Update Recipie
-![Add recipie](assets/images/wireframe_update.png)
-
-  #### Login
-![Add recipie](assets/images/wireframe_login.png)
-
-  #### Register
-![Add recipie](assets/images/wireframe_login.png)
 
 ## User Stories
   - As a site user I want to be able to navigate the website effectively.
@@ -85,44 +67,66 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 ## Features
 
   ### Home Page
+
+  Landing page for Art Connoisseur visitors.
   ___
 
 
-  ![Screenshot of Home Page](assets/images/features_home.png)
+  ![Screenshot of Home Page](/media/desktop_home.png)
 
-  ### View Recipie
+  ### Events Page
+
+  View past events organised by Art Connoisseur. Leave a comment to share your feedback.
   ___
 
   
-  ![Screenshot of recipie details view](assets/images/features_view_recipie.png)
+  ![Screenshot of events page](/media/desktop_events.png)
 
-  ### Update Recipie Page
+  ### Follow-us Page
+
+  Subscribe to Art Connoisseur newsletter.
   ___
 
 
-  ![Screenshot of recipie details view](assets/images/features_update_recipie.png)
+  ![Screenshot of Follow-us page](/media/desktop_newsletter.png)
 
 
-  ### Add Recipie Page
+  ### Materials Page
+
+  Browse for art materials and add items to the shopping bag.
   ___
   
-  ![Screenshot of Add Recipie page](assets/images/features_addrecipie.png)
+  ![Screenshot of Materials page](/media/desktop_materials.png)
 
   ### Login Page
+
+  As a registered user login to an account.
   ___
 
-  ![Screenshot of Login page](assets/images/features_login.png)
+  ![Screenshot of Login page](/media/desktop_login.png)
 
-  ### Logout Page
+  ### Register Page
+
+  Register for an Art Connoisseur account.
   ___
 
-  ![Screenshot of Login page](assets/images/features_sign_out.png)
+  ![Screenshot of Register page](/media/desktop_register.png)
 
 ## Web Marketing
+Art Connoisser is an eCommerse website specialising in art materials including a selection of high end products.
+The web marketing strategy at time of launch or Art Connoisseur encompasses:
+- Social media page on Facebook
+- Art Connoisseur optimised with SEO techniques
+- Newsletter  
 
 ### Social Media Marketing
-The initial phase of social media marketing was a Facebook launch for Art Connoiseur.
+Facebook has a large customer audience and since Art Connoiseur is mainly focused towards individual customers this platform is an effective and affordable tool for marketing purpose.
 ![FaceBook Page](media/social_marketing_fb.png)
+
+### Search Engine Optimization 
+In order to increase the likelyhood of Art Connoisseur appearing on the first page for a potential customer searching the web for art materials, a keyword research study was carried out and the following long and short tail words were selected for this project:
+
+- Finest quality, Professional grade, High quality, Renowned brands, Pigment rich, High quality paint brushes, High density paperm, High quality canvas with luxurious finish	
 
 ## Testing, Validation and Performance
 

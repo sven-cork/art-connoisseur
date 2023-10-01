@@ -73,25 +73,26 @@
   | In Follow Us view, enter email address in "Email Address" field and select "Subscribe" | Confirmation displayed | Pass |
   
 
-## Browser and Device Compatibility
-  The following Django Bakery features were tested using Chrome Developer Tools for the devices listed in the table below: login user, open recipie, update recipie, like recipie, delete recipie, register user.
+## Device Compatibility
+  The following Art Connoissery features were tested using Chrome Developer Tools for the devices listed in the table below:
+  - Login user
+  - Register user
+  - Open All Materials
+  - Open Events
+  - Add Comment to Event,
+  - Open Materials
+  - Select Material and add to bag
+  - Checkout view, update quantity
+  - Open Follow-us
+  - Subscribe to Newsletter
 
-  | Device | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Screenshot | Pass/Fail |
+  | Device | Functionality for the following pages: Home, Materials, Login, Logut, Register, Events, Follow-Us | Screenshot | Pass/Fail |
   |--------|-----------|---------|----|
-  | MacBook Pro M1 13"    | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
-  | iPad Air | All functionality works as expected | [![iPad Air](assets/images/ipadair.png)]  | Pass |
-  | iPhone 12 Pro | All functionality works as expected | [![iPhone 12 Pro](assets/images/iphone12pro.png)]  | Pass |
-  | Samsung Galaxy S8+ | All functionality works as expected | [![Samsung Galaxy S8+](assets/images/galaxys8.png)]  | Pass |
+  | MacBook Pro M1 13"    | All functionality works as expected | [![MacBook Pro 13"](/media/screenshot_mbp.png)]  | Pass |
+  | iPad Air | All functionality works as expected | [![iPad Air](/media/screenshot_iPad_Air.png)]  | Pass |
+  | iPhone 12 Pro | All functionality works as expected | [![iPhone 12 Pro](/media/screenshot_iPhone_12Pro.png)]  | Pass |
+
   
-
-## Browser Compatibility
-Browser compatibility was tested manually for Chrome, Safari and Firefox using a MacBook Pro M1 13" as per the table below:
-
-| Browser | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
-  |--------|--------------------|-----------|
-  | Chrome | All functionality works as expected | Pass |
-  | Safari | All functionality works as expected | Pass |
-  | Firefox | All functionality works as expected | Pass |
 
 ## Validation and Performance
 
@@ -194,8 +195,8 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 
 ### HTML Validation
- HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/).
-  [![W3 NU HTML Checker](assets/images/html_checker.png)]
+ HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/) and passed apart from the alert displayed below.
+  [![W3 NU HTML Checker](/media/validation_html.png)] 
 
 
 ### CSS Validation
@@ -205,7 +206,7 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 ### JavaScript Validation
  JavaCript validation was carried out using [jshint](https://jshint.com/).
- Alert regarding 'let' variable availability in ES6.
+ Alert regarding 'let' variable availability in ES6, no other comments.
   [![JavaScript validation with jshint](media/jshint.png)]
 
 
@@ -218,7 +219,8 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
   ___
 
   - Non registered users placing orders returning error. This was corrected ensuring only registered users having the option to checkout.
-
+  - 'My Profile' page not rendering on mobile views. This was corrected in 'mobile-top'header.html'.
+  - Footer area on 'My Profile' page does not take up the full viewport width and further research will be required to resolve this.
 
  
   
