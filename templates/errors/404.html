@@ -1,14 +1,35 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block extra_css %}
+<style>
+    body {
+        background-color: #f0f0f0; 
+    }
+    .error-container {
+        background-color: lightgrey;
+        padding: 20px;
+        text-align: center;
+    }
+    @media (max-width: 992px) {
+        .error-image {
+            order: -1; 
+        }
+    }
+</style>
+{% endblock %}
+
 {% block content %}
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
     </div>
+
     <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
+        <div class="row h-100 align-items-center">
+            
+            <div class="col-12 col-lg-6 my-auto error-container">
                 <h1 class="display-4 logo-font text-black">
                     Sorry the page you are looking for is not currently available.
                 </h1>
@@ -20,6 +41,10 @@
                         </a>
                     </h4>
                 </div>
+            </div>
+            
+            <div class="col-12 col-lg-6 error-image">
+                <img src="{% static 'error404_statue.jpg' %}" alt="Error 404 Statue" class="img-fluid">
             </div>
         </div>
     </div>
