@@ -210,6 +210,7 @@ input[name='q']::placeholder {
     left: 0;
     right: 0;
     z-index: 2;
+    width: 100%;
 }
 
 .footer a {
@@ -334,16 +335,7 @@ input[name='q']::placeholder {
     }
   }
   
-  @media (max-width: 576px) {
-      #follow-us-div, #mc_embed_shell {
-          max-width: 100%;
-      }
-
-      body {
-        background: url('/media/small_screen_greek.jpg');
-        margin-top: 120px;
-      }
-  }
+  
   
 
 /* fixed top navbar only on medium and up */
@@ -369,13 +361,25 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
-        margin-top: 120px;
+        margin-top: 75px;
     }
 
     .sign-out-text {
         background-color:#f8f9fa;
         padding: 10px;
     
+    }
+}
+
+/* larger mobile device sice */
+@media (max-width: 576px) {
+    #follow-us-div, #mc_embed_shell {
+        max-width: 100%;
+    }
+
+    body {
+      background: url('/media/small_screen_greek.jpg');
+      margin-top: 120px;
     }
 }
 
