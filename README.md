@@ -5,13 +5,8 @@
 - [Art Connoisseur Introduction](#django-bakery-introduction)                                        
 - [UX](#ux)
   - [User Stories](#user-stories)
-  - [Wireframes](#wireframes)
-    - [Home](#home)
-    - [My Delights](#my-delights)
-    - [Add Recipie](#add-recipie)
-    - [Login](#login)
-    - [Register](#register)
-
+  - [Design](#design)
+    
 - [Agile Methodology](#agile-methodology)
 
 - [Technologies](#technologies) 
@@ -19,6 +14,12 @@
   - [Frameworks, Hosting Services and IDEs](#frameworks-hosting-services-and-ides)
 
 - [Features](#features)
+  - [Home](#home)
+  - [Materials](#materials)
+  - [Events](#events)
+  - [Follow-Us](#follow_us)
+  - [Product Management](#product-management)
+  - [Cart](#cart)
 
 - [Web Marketing](#web-marketing)
   - [Social Media Marketing](#social-media-marketing)
@@ -34,6 +35,8 @@
   - [Cloning with GitHub](#cloning-with-github)
 
 - [Credits](#credits)
+  - [Project files](#project-files)
+  - [Image credits](#image-credits)
 
 
 ## Art Connoisseur Introduction
@@ -43,13 +46,8 @@ Art Connoisseur also provides information about art related events, workshops, d
 The live website can be accessed here [Django Bakery](https://django-baker-862762494240.herokuapp.com/).
 
 ## UX
-### Agile Methodology
 
-[GitHub projectboard](https://github.com/users/sven-cork/projects/11/views/1) was used to implement user stories for Art Connoisseur project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
-
-![GitHub Issues](assets/images/github_issues.png)
-
-## User Stories
+### User Stories
   - As a site user I want to be able to navigate the website effectively.
   - As a site user I want to sign up easily for a registered account.
   - As a site user I can view comments for past events and evaluate the feedback for future events.
@@ -63,54 +61,52 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
   - As a registered user I receive an order confirmation upon completing a purchase.
   - As a registered user I can start a purchase from the pop-up notification or from  inside the bag.
 
+### Design
+
+## Agile Methodology
+
+[GitHub projectboard](https://github.com/users/sven-cork/projects/11/views/1) was used to implement user stories for Art Connoisseur project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
+
+![GitHub Issues](assets/images/github_issues.png)
 
 ## Features
 
-  ### Home Page
+- [Features](#features)
+  - [Home](#home)
+  - [Materials](#materials)
+  - [Events](#events)
+  - [Follow-us](#follow_us)
+  - [Product Management](#product-management)
+  - [Cart](#cart)
+
+  ### Home
 
   Landing page for Art Connoisseur visitors.
   ___
 
-
   ![Screenshot of Home Page](/media/desktop_home.png)
 
-  ### Events Page
-
-  View past events organised by Art Connoisseur. Leave a comment to share your feedback.
-  ___
-
-  
-  ![Screenshot of events page](/media/desktop_events.png)
-
-  ### Follow-us Page
-
-  Subscribe to Art Connoisseur newsletter.
-  ___
-
-
-  ![Screenshot of Follow-us page](/media/desktop_newsletter.png)
-
-
-  ### Materials Page
+   ### Materials Page
 
   Browse for art materials and add items to the shopping bag.
   ___
   
-  ![Screenshot of Materials page](/media/desktop_materials.png)
+  ![Screenshot of Materials page](/media/features_materials.png)
 
-  ### Login Page
+  ### Events
 
-  As a registered user login to an account.
+  View past events organised by Art Connoisseur. Leave a comment to share your feedback.
   ___
 
-  ![Screenshot of Login page](/media/desktop_login.png)
+  ![Screenshot of events page](/media/features_events.png)
 
-  ### Register Page
+  ### Follow-us
 
-  Register for an Art Connoisseur account.
+  Subscribe to Art Connoisseur newsletter.
   ___
 
-  ![Screenshot of Register page](/media/desktop_register.png)
+  ![Screenshot of Follow-us page](/media/features_follow_us.png)
+
 
 ## Web Marketing
 Art Connoisser is an eCommerse website specialising in art materials including a selection of high end products.
@@ -120,13 +116,19 @@ The web marketing strategy at time of launch or Art Connoisseur encompasses:
 - Newsletter  
 
 ### Social Media Marketing
-Facebook has a large customer audience and since Art Connoiseur is mainly focused towards individual customers this platform is an effective and affordable tool for marketing purpose.
+Facebook has a large customer audience and since Art Connoiseur is mainly focused towards individual customers this platform is an effective and affordable tool for marketing purposes.
 ![FaceBook Page](media/social_marketing_fb.png)
 
-### Search Engine Optimization 
-In order to increase the likelyhood of Art Connoisseur appearing on the first page for a potential customer searching the web for art materials, a keyword research study was carried out and the following long and short tail words were selected for this project:
+For new site visitors a sign-up page for the Art Connoisseur newsletter can be found in the 'Follow-Us' page. This is an effective medium to focus special deal offerings or art events to an audience that has already demonstrated interest in Art Connoisseur, avoiding cramming to much information on to the website.
 
-- Finest quality, Professional grade, High quality, Renowned brands, Pigment rich, High quality paint brushes, High density paperm, High quality canvas with luxurious finish	
+### Search Engine Optimization 
+In order to increase the likelyhood of Art Connoisseur ranking high for a potential customer searching the web for art materials, a keyword research study was carried out and the following long and short tail words were selected for this project:
+
+- Finest quality, Premium Quality, Professional grade, High quality, Renowned brands, Pigment rich, High quality paint brushes, High density paperm, High quality canvas with luxurious finish.	
+
+Some keywords have been implemented in the alt attribute for images appearing on Art Connoisseur.
+
+A sitemap.xml files was utilised with Art Connoisseur providing search engines with more information about the website content, update frequency and page importance. This also help search engine crawlers with the indexing of Art Connoisseur.
 
 ## Testing, Validation and Performance
 
@@ -213,7 +215,6 @@ Django Bakery was deployed to Heroku as per the below steps:
 
 ## Credits
 
-
 ### Image Credits
 
   - [Art cover](https://www.freepik.com/free-ai-image/aesthetic-background-with-greek-bust_59772797.htm#query=greek%20statue&position=30&from_view=search&track=ais) image by freepik on freepik
@@ -244,4 +245,5 @@ Django Bakery was deployed to Heroku as per the below steps:
 
   - [Subtle Turqois](https://www.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_26782170.htm#query=subtle%20turqois&position=22&from_view=search&track=ais) image by benzoix on freepik 
   
-  
+  ### Project files
+  - This project was influenced by Code Institute ['Boutique Ado'](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/9ed36dc2c07228041b56b28174dd96ee56e6c59a) learning project, where the design and implementation was followed for the following apps: 'bag', 'profiles' and 'products'.
