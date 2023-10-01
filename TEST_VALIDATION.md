@@ -72,7 +72,7 @@
   
 
 ## Device Compatibility
-  The following Art Connoissery features were tested using Chrome Developer Tools for the devices listed in the table below:
+  The following Art Connoisseur features were tested using Chrome Developer Tools for the devices listed in the table below:
   - Login user
   - Register user
   - Open All Materials

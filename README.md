@@ -40,8 +40,7 @@
 
 
 ## Art Connoisseur Introduction
-Art Connoisseur is an eCommerce shop that has just established itself with the aim of providing artists and hobbyists alike with a range
-of art materials from budget to quality materials. At the moment the offering is small in quantity however growing for each week.
+Art Connoisseur is a newley established eCommerce store with the aim of providing professional artists and hobbyists alike with a range of art products, from budget to quality materials. Currently the offering is small in quantity however growing for each week.
 Art Connoisseur also provides information about art related events, workshops, drawing walks or historical trips for the art community.
 The live website can be accessed here [Art Connoisseur](https://art-connoisseur-a8261f99bee6.herokuapp.com/).
 

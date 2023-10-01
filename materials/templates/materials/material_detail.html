@@ -92,9 +92,22 @@
             </div>
         </div>
     </div>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .sign-out-container {
+            flex: 1;
+        }
+    </style>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
 {% include 'materials/includes/quantity_input_script.html' %}
+
+
 {% endblock %}

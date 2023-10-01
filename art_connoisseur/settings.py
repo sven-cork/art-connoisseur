@@ -11,7 +11,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['art-connoisseur.herokuapp.com', 'art-connoisseur-a8261f99bee6.herokuapp.com', '8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu105.gitpod.io', '8000-svencork-artconnoisseur-ubxpcz6nova.ws-eu104.gitpod.io', 'localhost']
 

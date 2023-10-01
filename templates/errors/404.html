@@ -14,9 +14,9 @@
     <div class="container">
         <div class="row body-content">
             <div class="col-7 col-md-6 my-auto special-offer-bar">
-                <h1 class="display-4 logo-font text-black smaller-font">
+                <h2 class="display-4 logo-font text-black smaller-font">
                     Sorry, the page you are looking for is not currently available.
-                </h1>
+                </h2>
                 <div class="my-5">
                     <h4>
                         <a href="{% url 'materials' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Browse Materials</a>
@@ -30,6 +30,7 @@
 {% block extra_css %}
     <style>
         body {
+            background: url('/media/greek_statue_freepik_freepik.jpg') no-repeat right top fixed;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
