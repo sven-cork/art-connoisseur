@@ -6,8 +6,6 @@
 
 - [Manual Testing](#manual-testing)
 
-- [Browser Compatibility](#browser-compatibility)
-
 - [Device Compatibility](#device-compatibility)
 
 - [Validation and Performance](#validation-and-performance)
@@ -93,7 +91,6 @@
   | iPhone 12 Pro | All functionality works as expected | [![iPhone 12 Pro](/media/screenshot_iPhone_12Pro.png)]  | Pass |
 
   
-
 ## Validation and Performance
 
   ### Lighthouse

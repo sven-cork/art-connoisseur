@@ -43,7 +43,7 @@
 Art Connoisseur is an eCommerce shop that has just established itself with the aim of providing artists and hobbyists alike with a range
 of art materials from budget to quality materials. At the moment the offering is small in quantity however growing for each week.
 Art Connoisseur also provides information about art related events, workshops, drawing walks or historical trips for the art community.
-The live website can be accessed here [Django Bakery](https://django-baker-862762494240.herokuapp.com/).
+The live website can be accessed here [Art Connoisseur](https://art-connoisseur-a8261f99bee6.herokuapp.com/).
 
 ## UX
 
@@ -63,9 +63,9 @@ The live website can be accessed here [Django Bakery](https://django-baker-86276
 
 ### Design
 
-The two dominant colour combinations on Art Connoisseur, a shade of tangerine and turqois were choosen for high impact and contrast. On the colour wheel we find orange and turqoise are on opposite sides making them complementary colours.
+The two dominant colour combinations on Art Connoisseur, a shade of tangerine and turqois were choosen for high impact and contrast. This is aparent in the header, footer, card borders, background and landing page background image. On the colour wheel we find orange and turqoise are on opposite sides making them complementary colours and aesthetically pleasing for the human eye.
 
-| Colour    | Complementary
+| Colour    | Complementary |
 |-----------|-----------|
 | ![Tangerine colour](/media/color_orange.png) ![Turqiose colour](/media/color_turqoise.png) |.       ![Colour Wheel](/media/colour_wheel.png) |
   
@@ -74,17 +74,18 @@ The two dominant colour combinations on Art Connoisseur, a shade of tangerine an
 
 [GitHub projectboard](https://github.com/users/sven-cork/projects/11/views/1) was used to implement user stories for Art Connoisseur project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
 
-![GitHub Issues](assets/images/github_issues.png)
+  <details>
+  <summary>Agile Git kanban board</summary>
+  <br>
+
+  [![Lightouse desktop Home page](/media/agile.png)]
+  ___
+
+  </details>
+
 
 ## Features
 
-- [Features](#features)
-  - [Home](#home)
-  - [Materials](#materials)
-  - [Events](#events)
-  - [Follow-us](#follow_us)
-  - [Product Management](#product-management)
-  - [Cart](#cart)
 
   ### Home
 
@@ -94,7 +95,7 @@ The two dominant colour combinations on Art Connoisseur, a shade of tangerine an
   ![Screenshot of Materials page](/media/features_home.png)
 
 
-   ### Materials Page
+   ### Materials
 
   Browse for art materials and add items to the shopping bag.
   ___
@@ -116,7 +117,7 @@ The two dominant colour combinations on Art Connoisseur, a shade of tangerine an
   ![Screenshot of Follow-us page](/media/features_follow_us.png)
 
 ## Web Marketing
-Art Connoisser is an eCommerse website specialising in art materials including a selection of high end products.
+Art Connoisser is a Business To Customer (B2C) website specialising in art materials including a selection of high end products.
 The web marketing strategy at time of launch or Art Connoisseur encompasses:
 - Social media page on Facebook
 - Art Connoisseur optimised with SEO techniques

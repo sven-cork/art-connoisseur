@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/bag/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=pigment_rich_oils</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=student_oils</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=acrylics</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=pigment_rich_oils,student_oils,acrylics,water_colour,inks</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=cotton_canvas</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=linen_canvas</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=cotton_canvas,linen_canvas,standard_canvas</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=acrylic_oil_paper</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=drawing_paper</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=acrylic_oil_paper,drawing_paper,watercolour_paper,</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=graphite_pencils</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=coals</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=brushes</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/?category=graphite_pencils,coloured_pencils,watercolour_pencils,coals</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/events/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/newsletter/newsletter/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/1/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/6/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/7/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/8/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/11/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/3/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/4/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/2/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/9/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/10/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://art-connoisseur-a8261f99bee6.herokuapp.com/m/5/</loc>
+  <lastmod>2023-10-01T15:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

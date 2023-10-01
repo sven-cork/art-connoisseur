@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /bag/
+Sitemap: https://art-connoisseur-a8261f99bee6.herokuapp.com/sitemap.xml
+
